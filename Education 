@@ -1,0 +1,27 @@
+import React from 'react';
+import { View, Text, Button, StyleSheet } from 'react-native';
+
+export default function HomeScreen({ navigation }) {
+  return (
+      <View style={styles.container}>
+            <Text>Welcome to My Diabetes App</Text>
+                  <Button
+                          title="Education"
+                                  onPress={() => navigation.navigate('Education')}
+                                        />
+                                              <Button
+                                                      title="Simulation"
+                                                              onPress={() => navigation.navigate('Simulation')}
+                                                                    />
+                                                                        </View>
+                                                                          );
+                                                                          }
+
+                                                                          const styles = StyleSheet.create({
+                                                                            container: {
+                                                                                flex: 1,
+                                                                                    alignItems: 'center',
+                                                                                        justifyContent: 'center',
+                                                                                          },
+                                                                                          });
+└── README.md
